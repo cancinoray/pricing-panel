@@ -1,0 +1,158 @@
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  max-height: 100vh;
+  background-color: whitesmoke;
+}
+
+table {
+  table-layout: fixed;
+  word-wrap: break-word;
+  margin-top:auto;
+  margin-bottom:auto;
+  background-color: white;
+  
+}
+.type {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.dollar {
+  font-size: 1.75rem;
+  color: grey;
+  margin-bottom: 0.25rem;
+  padding-bottom:0.25rem;
+}
+
+.caps {
+  font-size: 0.75rem;
+  color: grey;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  width: auto;
+  max-width: 800px;
+  padding: 0px 0px;
+  margin-top: 100px;
+  margin-bottom: 1000px;
+  background-color: white;
+  box-shadow: 0 10px 10px 10px rgba(0 , 0 , 0 , 0.4);
+}
+
+.card-header{
+  padding: 0px 0px;
+  margin:0px 0px;
+}
+
+
+
+.btn{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+}
+
+.basic{
+  background-color: rgb(105, 46, 100);
+  color: white;
+}
+
+.buss{
+  background-color: rgb(16, 218, 16);
+  color: white;
+}
+
+
+.pro{
+  background-color: rgb(8, 94, 128);
+  color: white;
+}
+
+
+
+.btn:hover{
+  filter: brightness(150%)
+}
+
+.btn:active{
+  transform: translate(0 , 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.grey{
+  color: gray;
+}
+
+.bi{
+  color:lime;
+}
+
+.bi-x-lg {
+  color:red;
+}
+
+.trheader{
+  font-weight: bold;
+}
+
+.table > :not(:first-child) {
+  border-top: 0;
+}
+
+/* Responsive table */
+/* https://ourcodeworld.com/articles/read/307/how-to-create-a-responsive-table-with-css */
+
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+      width: 100%;
+      margin-bottom: 15px;
+      overflow-y: hidden;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      border: 1px solid #ddd;
+  }
+  .table-responsive > .table {
+      margin-bottom: 0;
+  }
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+      white-space: nowrap;
+  }
+}
+/* Responsive table */
+
+#accordion .trheader[aria-expanded=false] span:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  float: left;
+ transition: all .5s;
+}
+
+#accordion .trheader[aria-expanded=true] span:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  float: left;
+  transition: all .5s;
+  -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
